@@ -97,27 +97,27 @@
 
   ~~~swift
   override func draw(_ rect: CGRect) {
-    super.draw(rect)
+      super.draw(rect)
 
-    // UIBezierPath 객체 생성 및 커스텀
-    let path = UIBezierPath()
-    UIColor.black.set()
-    path.lineWidth = 5
+      // UIBezierPath 객체 생성 및 커스텀
+      let path = UIBezierPath()
+      UIColor.black.set()
+      path.lineWidth = 5
 
-    // 노란점, 초록점 위치 구하기
-    let yellowDotX: CGFloat = yellowDot.frame.origin.x + yellowDot.frame.width / 2
-    let yellowDotY: CGFloat = yellowDot.frame.origin.y + yellowDot.frame.height / 2
-    let greenDotX: CGFloat = greenDot.frame.origin.x + greenDot.frame.width / 2
-    let greenDotY: CGFloat = greenDot.frame.origin.y + greenDot.frame.height / 2
+      // 노란점, 초록점 위치 구하기
+      let yellowDotX: CGFloat = yellowDot.frame.origin.x + yellowDot.frame.width / 2
+      let yellowDotY: CGFloat = yellowDot.frame.origin.y + yellowDot.frame.height / 2
+      let greenDotX: CGFloat = greenDot.frame.origin.x + greenDot.frame.width / 2
+      let greenDotY: CGFloat = greenDot.frame.origin.y + greenDot.frame.height / 2
 
-    // 시작점 설정
-    path.move(to: CGPoint(x: yellowDotX, y: yellowDotY))
+      // 시작점 설정
+      path.move(to: CGPoint(x: yellowDotX, y: yellowDotY))
 
-    // 끝점 설정
-    path.addLine(to: CGPoint(x: greenDotX, y: greenDotY))
+      // 끝점 설정
+      path.addLine(to: CGPoint(x: greenDotX, y: greenDotY))
 
-    // 선 그리기
-    path.stroke()
+      // 선 그리기
+      path.stroke()
   }
   ~~~
 
@@ -125,5 +125,46 @@
   <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/2b4ea1c9-436c-4710-9028-eb3fbbaea666">
 
   점의 가운데 위치를 잡고 있기 때문에 점들 간의 y값이 달라도 정확히 이어주게 됩니다.   
-    <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/ee214cac-ab12-4a82-9923-0e9ea45ffe05">
+  <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/ee214cac-ab12-4a82-9923-0e9ea45ffe05">
 
+<br>
+
+- #### Pinch(확대, 축소), Pan(드래그) 이벤트 추가하기
+  우주 공간을 자유롭게 돌아다니는 느낌을 주고 싶어 이리저리 확대하고 이동하는 이벤트를 구현해보았습니다. 평소에 `UITapGesture` 밖에 사용해보지 않았었는데, 이번 기회로 다양한 제스처를 사용해 볼 수 있었습니다.
+
+  Pinch 제스처
+  ~~~swift
+  // GestureReconizer 객체 생성
+  let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchEvent))
+  view.addGestureRecognizer(pinchGesture)
+
+  @objc func pinchEvent(gesture: UIPinchGestureRecognizer) {
+      // 이벤트 발생 시 Scale값 조정
+      let scale = gesture.scale
+      view.transform = CGAffineTransform(scaleX: scale, y: scale)
+  }
+  ~~~
+
+  Pan 제스처
+  ~~~swift
+  // GestureReconizer 객체 생성
+  let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panEvent))
+  view.addGestureRecognizer(panGesture)
+
+  @objc func panEvent(gesture: UIPanGestureRecognizer) {
+      // 이벤트 발생 시 pan 거리 계산으로 view 위치 조정
+      let translation = gesture.translation(in: view.superview)
+
+      // view 위치 조정
+      view.center = CGPoint(x: view.center.x + translation.x,
+                            y: view.center.y + translation.y)
+
+      // 제스처 종료 시 뷰의 현재 위치 이동 지점으로 초기화
+      gesture.setTranslation(CGPoint.zero, in: view.superview)
+  }
+  ~~~
+
+  <br>
+
+  View 바깥 영역은 비어있지만, 확대 및 축소 기능 구현에 성공했습니다.   
+  <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/47b39bb6-865c-451a-b94e-c4b3f691bbfb">
