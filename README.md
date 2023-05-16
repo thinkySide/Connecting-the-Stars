@@ -68,7 +68,7 @@
   삶의 연결점을 모두 이어보면 어떨까 해서 먼저 무작정 그려봤습니다.   
   <img src="https://github.com/thinkySide/BppleForImageData/assets/113565086/5b966d12-6019-42e7-9e58-9f9f18b4b3bd">
   
-  또 지금의 나를 만들기까지 어느정도의 영향을 주었는지 상대적으로 높낮이에 차이를 두어 그려도 보았습니다.
+  또 지금의 나를 만들기까지 어느정도의 영향을 주었는지 상대적으로 높낮이에 차이를 두어 그려도 보았습니다.   
   꼭 별자리 같은 모양이 나왔습니다.   
   <img src="https://github.com/thinkySide/BppleForImageData/assets/113565086/338f381f-50af-40f5-b00e-d09566024531">
   
@@ -100,11 +100,47 @@
 
 ### Day 4 23.05.15(MON)
 
-- #### 다양한 방법 생각해보기
+- #### 다양한 방법 생각해보기 
   아무래도 우주 컨셉을 잡다보니 인터랙티브한 부분들을 추가하고 싶었습니다.   
   별을 만들어 직접 드래그해 잇거나 우주 전체를 여행하는 느낌이 들도록 줌인, 줌아웃 이벤트를 구상했습니다.   
   하지만 문제는 이를 구현하기 위해서 다양한 기능 개발이 필요한데 남은 기간이 길지 않다는 것입니다.   
   최소한의 인터랙티브 기능 구현만으로 우주 느낌을 줄 수 있는 방법을 고민해봐야합니다.
 
+---
+
+<br>
+
+### Day 5 23.05.16(TUE)
+
+- #### Swift에서 점과 점을 이어보기
+  우선 인터랙티브한 구현에 있어 가장 중요한 '점과 점 사이를 잇는 선'을 그리는 코드를 작성해보기로 했습니다.   
+  Swift에서는 드로잉을 위해 `UIBezierPath`를 사용한다고 합니다.   
+  처음 사용해보는 클래스로 시행착오가 조금 있었지만 첫번째 목표는 이루었습니다.
+
+  ~~~swift
+  override func draw(_ rect: CGRect) {
+    super.draw(rect)
+
+    // UIBezierPath 객체 생성 및 커스텀
+    let path = UIBezierPath()
+    UIColor.black.set()
+    path.lineWidth = 5
+
+    // 노란점, 초록점 위치 구하기
+    let yellowDotX: CGFloat = yellowDot.frame.origin.x + yellowDot.frame.width / 2
+    let yellowDotY: CGFloat = yellowDot.frame.origin.y + yellowDot.frame.height / 2
+    let greenDotX: CGFloat = greenDot.frame.origin.x + greenDot.frame.width / 2
+    let greenDotY: CGFloat = greenDot.frame.origin.y + greenDot.frame.height / 2
+
+    // 시작점 설정
+    path.move(to: CGPoint(x: yellowDotX, y: yellowDotY))
+
+    // 끝점 설정
+    path.addLine(to: CGPoint(x: greenDotX, y: greenDotY))
+
+    // 선 그리기
+    path.stroke()
+  }
+  ~~~
 
 
