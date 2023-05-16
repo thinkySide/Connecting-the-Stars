@@ -143,4 +143,10 @@
   }
   ~~~
 
+  일직선으로 잘 그어지는 모습입니다.   
+  <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/2b4ea1c9-436c-4710-9028-eb3fbbaea666">
 
+  점의 가운데 위치를 잡고 있기 때문에 점들 간의 y값이 달라도 정확히 이어주게 됩니다.   
+    <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/ee214cac-ab12-4a82-9923-0e9ea45ffe05">
+
+    
