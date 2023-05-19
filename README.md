@@ -168,3 +168,12 @@
 
   View 바깥 영역은 비어있지만, 확대 및 축소 기능 구현에 성공했습니다.   
   <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/47b39bb6-865c-451a-b94e-c4b3f691bbfb">
+
+  ---
+
+  <br>
+
+  ### Day 6 23.05.19(FRI)
+
+  - #### Xcode Initial Setting
+    본격적인 개발에 앞서 코드 베이스 Xcode 기본 설정을 마친 후 커밋했습니다.
