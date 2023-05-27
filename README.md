@@ -206,4 +206,6 @@
     - 결국 콘텐츠를 제작하는 일은 사람을 위한 것이다. 즉, 사람에 대해 아는 것이 가장 중요하다.
     - 게임 - UI디자인 - 서비스 기획 - UX 디자인 - iOS 개발
 
-    <img src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/8721b86e-74db-40e9-ab20-2727906d8b00">
+<br>
+
+  <img src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/8721b86e-74db-40e9-ab20-2727906d8b00">
