@@ -14,7 +14,7 @@ final class SpaceView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBlue
+        backgroundColor = Color.space
     }
     
     required init?(coder: NSCoder) {

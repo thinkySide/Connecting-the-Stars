@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		077122132A4DB07500AFD8BA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077122122A4DB07500AFD8BA /* UIColor+Extension.swift */; };
+		077122162A4DB51400AFD8BA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 077122152A4DB51400AFD8BA /* SnapKit */; };
 		07D6D6A12A175C12007BBA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6A02A175C12007BBA97 /* AppDelegate.swift */; };
 		07D6D6A32A175C12007BBA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6A22A175C12007BBA97 /* SceneDelegate.swift */; };
 		07D6D6A52A175C12007BBA97 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6A42A175C12007BBA97 /* SpaceViewController.swift */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077122162A4DB51400AFD8BA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = ConnectingTheStars;
+			packageProductDependencies = (
+				077122152A4DB51400AFD8BA /* SnapKit */,
+			);
 			productName = ConnectingTheStars;
 			productReference = 07D6D69D2A175C12007BBA97 /* ConnectingTheStars.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 07D6D6942A175C11007BBA97;
+			packageReferences = (
+				077122142A4DB51400AFD8BA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 07D6D69E2A175C12007BBA97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		077122142A4DB51400AFD8BA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		077122152A4DB51400AFD8BA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 077122142A4DB51400AFD8BA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		07D6D6A92A175C12007BBA97 /* ConnectingTheStars.xcdatamodeld */ = {

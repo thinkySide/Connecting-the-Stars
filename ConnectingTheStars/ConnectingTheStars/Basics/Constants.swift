@@ -9,4 +9,5 @@ import UIKit
 
 enum Color {
     static let space = UIColor(rgb: 0x131315)
+    static let yellow = UIColor(rgb: 0xF4CA61)
 }
