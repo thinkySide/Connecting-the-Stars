@@ -15,7 +15,7 @@
 		07D6D6B02A175C13007BBA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D6D6AE2A175C13007BBA97 /* LaunchScreen.storyboard */; };
 		07D6D6B92A175C46007BBA97 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6B82A175C46007BBA97 /* Model.swift */; };
 		07D6D6BD2A175C87007BBA97 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6BC2A175C87007BBA97 /* SpaceView.swift */; };
-		07D6D6C02A175F57007BBA97 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6BF2A175F57007BBA97 /* NameSpace.swift */; };
+		07D6D6C02A175F57007BBA97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6BF2A175F57007BBA97 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		07D6D6B12A175C13007BBA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D6D6B82A175C46007BBA97 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07D6D6BC2A175C87007BBA97 /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
-		07D6D6BF2A175F57007BBA97 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
+		07D6D6BF2A175F57007BBA97 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0771220F2A4DAF2800AFD8BA /* Essentials */ = {
+			isa = PBXGroup;
+			children = (
+				07D6D6AC2A175C13007BBA97 /* Assets.xcassets */,
+				07D6D6AE2A175C13007BBA97 /* LaunchScreen.storyboard */,
+				07D6D6B12A175C13007BBA97 /* Info.plist */,
+				07D6D6A92A175C12007BBA97 /* ConnectingTheStars.xcdatamodeld */,
+			);
+			path = Essentials;
+			sourceTree = "<group>";
+		};
 		07D6D6942A175C11007BBA97 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +73,8 @@
 		07D6D69F2A175C12007BBA97 /* ConnectingTheStars */ = {
 			isa = PBXGroup;
 			children = (
-				07D6D6AC2A175C13007BBA97 /* Assets.xcassets */,
-				07D6D6AE2A175C13007BBA97 /* LaunchScreen.storyboard */,
-				07D6D6B12A175C13007BBA97 /* Info.plist */,
-				07D6D6A92A175C12007BBA97 /* ConnectingTheStars.xcdatamodeld */,
-				07D6D6BB2A175C69007BBA97 /* Essentials */,
+				0771220F2A4DAF2800AFD8BA /* Essentials */,
+				07D6D6BB2A175C69007BBA97 /* Basics */,
 				07D6D6B72A175C3F007BBA97 /* Models */,
 				07D6D6BA2A175C4F007BBA97 /* Views */,
 				07D6D6BE2A175CFD007BBA97 /* Controllers */,
@@ -90,14 +98,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		07D6D6BB2A175C69007BBA97 /* Essentials */ = {
+		07D6D6BB2A175C69007BBA97 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
 				07D6D6A02A175C12007BBA97 /* AppDelegate.swift */,
 				07D6D6A22A175C12007BBA97 /* SceneDelegate.swift */,
-				07D6D6BF2A175F57007BBA97 /* NameSpace.swift */,
+				07D6D6BF2A175F57007BBA97 /* Constants.swift */,
 			);
-			path = Essentials;
+			path = Basics;
 			sourceTree = "<group>";
 		};
 		07D6D6BE2A175CFD007BBA97 /* Controllers */ = {
@@ -182,7 +190,7 @@
 				07D6D6A52A175C12007BBA97 /* SpaceViewController.swift in Sources */,
 				07D6D6AB2A175C12007BBA97 /* ConnectingTheStars.xcdatamodeld in Sources */,
 				07D6D6A12A175C12007BBA97 /* AppDelegate.swift in Sources */,
-				07D6D6C02A175F57007BBA97 /* NameSpace.swift in Sources */,
+				07D6D6C02A175F57007BBA97 /* Constants.swift in Sources */,
 				07D6D6A32A175C12007BBA97 /* SceneDelegate.swift in Sources */,
 				07D6D6BD2A175C87007BBA97 /* SpaceView.swift in Sources */,
 			);
@@ -325,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9XG4S4XZWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ConnectingTheStars/Info.plist;
+				INFOPLIST_FILE = ConnectingTheStars/Essentials/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -352,7 +360,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9XG4S4XZWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ConnectingTheStars/Info.plist;
+				INFOPLIST_FILE = ConnectingTheStars/Essentials/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
