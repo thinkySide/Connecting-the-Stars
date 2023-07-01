@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075F451C2A50282300FCCF2B /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F451B2A50282300FCCF2B /* Star.swift */; };
+		075F452E2A502A5E00FCCF2B /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45252A502A5C00FCCF2B /* Pretendard-Regular.otf */; };
+		075F452F2A502A5E00FCCF2B /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45262A502A5C00FCCF2B /* Pretendard-Light.otf */; };
+		075F45302A502A5E00FCCF2B /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45272A502A5C00FCCF2B /* Pretendard-Bold.otf */; };
+		075F45312A502A5E00FCCF2B /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45282A502A5D00FCCF2B /* Pretendard-ExtraBold.otf */; };
+		075F45322A502A5E00FCCF2B /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45292A502A5D00FCCF2B /* Pretendard-Thin.otf */; };
+		075F45332A502A5E00FCCF2B /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F452A2A502A5D00FCCF2B /* Pretendard-Medium.otf */; };
+		075F45342A502A5E00FCCF2B /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F452B2A502A5E00FCCF2B /* Pretendard-ExtraLight.otf */; };
+		075F45352A502A5E00FCCF2B /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F452C2A502A5E00FCCF2B /* Pretendard-Black.otf */; };
+		075F45362A502A5E00FCCF2B /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 075F452D2A502A5E00FCCF2B /* Pretendard-SemiBold.otf */; };
+		075F45382A502A7800FCCF2B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 075F45372A502A7800FCCF2B /* Poppins-Bold.ttf */; };
+		075F453C2A50302900FCCF2B /* BubbleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F453B2A50302900FCCF2B /* BubbleText.swift */; };
+		075F453E2A50333100FCCF2B /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F453D2A50333100FCCF2B /* Bubble.swift */; };
 		077122132A4DB07500AFD8BA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077122122A4DB07500AFD8BA /* UIColor+Extension.swift */; };
 		077122162A4DB51400AFD8BA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 077122152A4DB51400AFD8BA /* SnapKit */; };
 		07D6D6A12A175C12007BBA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D6A02A175C12007BBA97 /* AppDelegate.swift */; };
@@ -21,6 +34,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075F451B2A50282300FCCF2B /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		075F45252A502A5C00FCCF2B /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		075F45262A502A5C00FCCF2B /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		075F45272A502A5C00FCCF2B /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		075F45282A502A5D00FCCF2B /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		075F45292A502A5D00FCCF2B /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		075F452A2A502A5D00FCCF2B /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		075F452B2A502A5E00FCCF2B /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		075F452C2A502A5E00FCCF2B /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		075F452D2A502A5E00FCCF2B /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		075F45372A502A7800FCCF2B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		075F453B2A50302900FCCF2B /* BubbleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleText.swift; sourceTree = "<group>"; };
+		075F453D2A50333100FCCF2B /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		077122122A4DB07500AFD8BA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		07D6D69D2A175C12007BBA97 /* ConnectingTheStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectingTheStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D6D6A02A175C12007BBA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +73,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075F451A2A50280F00FCCF2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				075F453D2A50333100FCCF2B /* Bubble.swift */,
+				075F453B2A50302900FCCF2B /* BubbleText.swift */,
+				075F451B2A50282300FCCF2B /* Star.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		075F45202A502A0000FCCF2B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				075F45222A502A1A00FCCF2B /* Pretendard */,
+				075F45212A502A1400FCCF2B /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		075F45212A502A1400FCCF2B /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				075F45372A502A7800FCCF2B /* Poppins-Bold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		075F45222A502A1A00FCCF2B /* Pretendard */ = {
+			isa = PBXGroup;
+			children = (
+				075F452C2A502A5E00FCCF2B /* Pretendard-Black.otf */,
+				075F45272A502A5C00FCCF2B /* Pretendard-Bold.otf */,
+				075F45282A502A5D00FCCF2B /* Pretendard-ExtraBold.otf */,
+				075F452B2A502A5E00FCCF2B /* Pretendard-ExtraLight.otf */,
+				075F45262A502A5C00FCCF2B /* Pretendard-Light.otf */,
+				075F452A2A502A5D00FCCF2B /* Pretendard-Medium.otf */,
+				075F45252A502A5C00FCCF2B /* Pretendard-Regular.otf */,
+				075F452D2A502A5E00FCCF2B /* Pretendard-SemiBold.otf */,
+				075F45292A502A5D00FCCF2B /* Pretendard-Thin.otf */,
+			);
+			path = Pretendard;
+			sourceTree = "<group>";
+		};
 		0771220F2A4DAF2800AFD8BA /* Essentials */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +160,8 @@
 				07D6D6BA2A175C4F007BBA97 /* Views */,
 				07D6D6BE2A175CFD007BBA97 /* Controllers */,
 				077122112A4DB03800AFD8BA /* Extensions */,
+				075F451A2A50280F00FCCF2B /* Components */,
+				075F45202A502A0000FCCF2B /* Fonts */,
 			);
 			path = ConnectingTheStars;
 			sourceTree = "<group>";
@@ -194,7 +265,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D6D6B02A175C13007BBA97 /* LaunchScreen.storyboard in Resources */,
+				075F45302A502A5E00FCCF2B /* Pretendard-Bold.otf in Resources */,
+				075F45342A502A5E00FCCF2B /* Pretendard-ExtraLight.otf in Resources */,
+				075F45362A502A5E00FCCF2B /* Pretendard-SemiBold.otf in Resources */,
+				075F45312A502A5E00FCCF2B /* Pretendard-ExtraBold.otf in Resources */,
+				075F45322A502A5E00FCCF2B /* Pretendard-Thin.otf in Resources */,
+				075F452E2A502A5E00FCCF2B /* Pretendard-Regular.otf in Resources */,
+				075F45382A502A7800FCCF2B /* Poppins-Bold.ttf in Resources */,
+				075F45352A502A5E00FCCF2B /* Pretendard-Black.otf in Resources */,
+				075F452F2A502A5E00FCCF2B /* Pretendard-Light.otf in Resources */,
 				07D6D6AD2A175C13007BBA97 /* Assets.xcassets in Resources */,
+				075F45332A502A5E00FCCF2B /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075F451C2A50282300FCCF2B /* Star.swift in Sources */,
+				075F453C2A50302900FCCF2B /* BubbleText.swift in Sources */,
 				07D6D6B92A175C46007BBA97 /* Model.swift in Sources */,
 				07D6D6A52A175C12007BBA97 /* SpaceViewController.swift in Sources */,
 				07D6D6AB2A175C12007BBA97 /* ConnectingTheStars.xcdatamodeld in Sources */,
 				07D6D6A12A175C12007BBA97 /* AppDelegate.swift in Sources */,
+				075F453E2A50333100FCCF2B /* Bubble.swift in Sources */,
 				07D6D6C02A175F57007BBA97 /* Constants.swift in Sources */,
 				07D6D6A32A175C12007BBA97 /* SceneDelegate.swift in Sources */,
 				07D6D6BD2A175C87007BBA97 /* SpaceView.swift in Sources */,

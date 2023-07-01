@@ -24,7 +24,7 @@ final class SpaceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Init!")
+        
     }
 }
 
