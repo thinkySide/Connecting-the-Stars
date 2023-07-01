@@ -316,3 +316,17 @@
 ---
 
   <br>
+
+  ### Day 15 23.07.01(SAT)
+
+  - #### Star Component
+    UI에서 가장 많이 사용할 요소 중 하나인 `Star`를 컴포넌트화 시켰습니다. 말풍선을 만드는 과정에서 UILabel 내부에 Padding값을 설정하는 방법과, 이미지를 뒤집는 방법에 대해 배울 수 있었습니다.
+
+    - [UILabel 내부에 Padding값 설정하기](https://github.com/thinkySide/Cheat-Sheet/blob/main/Solution/43.md)
+    - [UIImage 뒤집기](https://github.com/thinkySide/Cheat-Sheet/blob/main/Solution/44.md)
+
+    <img width="300" src="https://github.com/thinkySide/Connecting-the-Stars/assets/113565086/41f98be7-f421-4df1-b7f9-608f482f7d49">
+
+---
+
+  <br>
